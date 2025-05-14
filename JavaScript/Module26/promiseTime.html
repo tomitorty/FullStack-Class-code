@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">Miss Tomi wait for 10 sec for Briyani</h1>
+    <script>
+        const orderReady=new Promise(function(resolve,reject){
+            setTimeout(()=>{resolve("Your order is ready");},10000) //10000 millisec = 10 sec
+        });
+        orderReady.then(function(value){
+            document.getElementById("h").innerHTML=value;
+        })
+
+    </script>
+    
+</body>
+</html>

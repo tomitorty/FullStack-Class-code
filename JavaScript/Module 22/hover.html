@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hoverbox{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Browser Event Demo</h1>
+    <button id="clickbtn">click me</button>
+    <div id="hoverbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sequi fugit ipsum itaque dolore aspernatur a consectetur fuga harum quam provident perspiciatis nisi nobis accusantium nihil perferendis, 
+        excepturi incidunt quas. </div>
+        <script>
+            document.getElementById("clickbtn").addEventListener("click", function() {
+                alert("Hello");
+            })
+            document.getElementById("hoverbox").addEventListener("mouseover", function() {
+                this.style.background="green";
+            })
+            document.getElementById("hoverbox").addEventListener("mouseout", function() {
+                this.style.background="purple";
+            }
+            )
+        </script>
+    
+</body>
+</html>

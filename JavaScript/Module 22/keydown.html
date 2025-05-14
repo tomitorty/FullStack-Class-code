@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keyboard Events</title>
+</head>
+<body>
+  <h1>Keyboard Events</h1>
+
+  <input id="presskeydown" placeholder="Today's werater is gorgeous"/>
+  <input id="keyup" placeholder="It's sunny now"/>
+  <input id="presskey" placeholder="Tomorrow's temperature would be lower than today"/>
+
+  <script>
+    
+    document.getElementById("presskeydown").addEventListener("keydown", function () {
+      alert("Key down detected!");
+    });
+
+    
+    document.getElementById("keyup").addEventListener("keyup", function () {
+      this.style.background = "green";
+    });
+    
+    document.getElementById("presskey").addEventListener("keyup", function () {
+      this.style.background = "purple";
+    });
+  </script>
+</body>
+</html>
+
